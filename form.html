@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Goa Trip Registration Form</title>
+    <style>
+        body{
+            background-image: url('img.jpg');
+            background-repeat: no-repeat;
+            width: 100%;
+            position: absolute;
+        }
+        .txt{
+            background-color: black;
+            color: wheat;
+        }
+        .form{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-decoration: solid;
+        }
+        .btn{
+            background-color: deepskyblue;
+            border-radius: 15%;
+        }
+        .btn:hover{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <marquee class="txt"><i>Registration closes on 20 December 2023</i></marquee>
+        <div class="form">
+        <center><h1>Goa Trip Registration Form</h1>
+        <form method="post" action="index.php">
+            Name: <input type="text" name="name" placeholder="Enter name" required><br><br>
+            Email: <input type="email" name="email" placeholder="Enter email id" required><br><br>
+            Phone number: <input type="number" name="number" placeholder="Enter phone number" required><br><br>
+            Gender: <input type="radio" name="gender" value="female">Female
+            <input type="radio" name="gender" value="male">Male 
+            <input type="radio" name="gender" value="other">Other<br><br>
+            City: <select name="city">
+                <option value="Nagpur">Nagpur</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Pune">Pune</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Delhi">Delhi</option>
+            </select><br><br>
+            <button type="submit" class="btn">Submit</button>
+            <button type="reset" class="btn">Reset</button>
+        </form>
+    </center>
+    </div>
+</div>
+</body>
+</html>
